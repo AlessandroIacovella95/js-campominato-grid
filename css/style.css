@@ -10,8 +10,14 @@ main{
     width: 50px;
 }
 
+#difficult{
+    margin-top: 6px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
 #button{
-    width: 120px;
+    width: 250px;
     border-radius: 5px;
     border-color: #AFAFB9;
     font-size: 1rem;

@@ -16,7 +16,15 @@
                 <img class="logo" src="./img/mobile-logo.png" alt="">
                 <h1>Campo minato</h1>
             </div>
-            <button class="me-5" id="button">Play</button>
+            <div class="d-flex">
+                <label id="difficult" for="floatingSelect">Difficoltà:</label>
+                <select class="form-select difficult" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                  </select>
+                <button class="ms-3" id="button">Play</button>
+            </div>
         </div>
     </header>
     <main>
