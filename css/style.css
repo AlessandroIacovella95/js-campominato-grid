@@ -1,0 +1,43 @@
+main{
+    background-color: aquamarine;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+}
+
+#button{
+    width: 120px;
+    border-radius: 5px;
+    border-color: #AFAFB9;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#grid {
+    list-style-type: none;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#grid .cell {
+    width: 10%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.color_cells {
+    background-color: rgb(55, 233, 233);
+}
