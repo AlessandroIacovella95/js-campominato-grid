@@ -46,11 +46,11 @@ button.addEventListener('click', function(){
     generateGrid()
 })
 
-//* Recupero elemento con class difficult
-let difficultyEl = document.getElementById('floatingSelect');
+//* Recupero elemento dal DOM con id floatingSelect
+const difficultyEl = document.getElementById('floatingSelect');
 //*Funzione Griglia
 function generateGrid() {
-    let difficulty = difficultyEl.value
+    const difficulty = difficultyEl.value
     let size;
     //* Dimensioni della griglia in base alla difficoltà scelta
     switch (difficulty) {
