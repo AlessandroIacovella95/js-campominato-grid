@@ -49,15 +49,18 @@ const difficultyEl = document.getElementById('floatingSelect');
 function generateCell(cellSize) {
     for (let i = 1; i <= (cellSize * cellSize); i++) {
         const cell = document.createElement('li');
+        cell.setAttribute('data-index', i)
         cell.className = 'cell';
-        cell.innerText = i;
         //* Controllo per le dimensioni della griglia
         cell.style.width = (100 / cellSize) + '%';
         cell.style.height = (100 / cellSize) + '%';
         //* Evento sul click della cella
         cell.addEventListener('click', function () {
-            this.classList.toggle('color_cells')
+            const index = parseInt(this.getAttribute('data-index'))
+            this.innerText = index
+            this.classList.add('color_cells')
             console.log(this.innerText)
+            this.innerText = ''
         });
         
         grid.appendChild(cell);
